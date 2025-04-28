@@ -26,12 +26,12 @@ body,
 
 .container-log {
     width: 500px;
-    height: 500px;
+    height: 550px;
     background: #fff;
     border-radius: 1rem;
 }
 
-.titulo, .tela-signin, .botao {
+.titulo, .tela-signin {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,15 +50,6 @@ input{
 
 p {
     color: #747775;
-}
-
-.botao-google {
-    width: 400px;
-    height: 30px;
-    margin-top: 5px;
-    border-radius: 0.3rem;
-    border: 0.3px solid;
-    background-color: #fff;
 }
 
 .botao-login {
@@ -105,12 +96,9 @@ label {
     transition: background-color .218s, border-color .218s, box-shadow .218s;
     vertical-align: middle;
     white-space: nowrap;
-    width: 400px;
-    max-width: 400px;
-    min-width: min-content;
-
-
-    
+    width: auto;
+    max-width: 400px; 
+    min-width: min-content;  
   }
   
   .gsi-material-button .gsi-material-button-icon {
@@ -129,10 +117,10 @@ label {
     flex-direction: row;
     -webkit-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    height: 30px;
+    height: 100%;
     justify-content: center;
     position: relative;
-    width: 400px;
+    width: 376px;
   }
   
   .gsi-material-button .gsi-material-button-contents {
