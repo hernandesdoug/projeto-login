@@ -37,6 +37,10 @@ body,
     padding-left: 40px;
 }
 
+.link-signup {
+    text-decoration: none;
+}
+
 .grid-form {
     background: #fff;
     border-radius: 1rem;
