@@ -1,0 +1,22 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+hmtl,
+body,
+.div-bgr
+{
+  /* vh -  viewport height */
+  min-height: 100vh;
+}
+
+.grid-form {
+    width: 600px;
+    height: 600px;
+    background: #fff;
+    border-radius: 1rem;
+}
