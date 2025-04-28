@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="div-bgr">
+        <div class="container">
+            <div class="titulo-signup">
+                <img src="imagens/icone.jpg" alt="icone empresa">
+                <h1>Sign Up</h1>
+                <p>Enter your details below to create your account and get started.</p>
+            </div>
+            <div class="grid-form">
+                <div class="form-left">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" placeholder="enter...">
+                    <br>
+                    <label for="date-birth">Date of Birth</label>
+                    <input type="date">
+                    <br>
+                    <label for="nationality">Nationality</label>
+                    <select name="select">
+                        <option value="">Select</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="usa">United States</option>
+                        <option value="argentina">Argentina</option>
+                    </select>
+                    <br>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="enter...">
+                    <br>
+                    <a class="link-signin" href="index.html"><button class="botao-cancel">Cancel</button></a>
+                </div>
+                <div class="form-right">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="enter email...">
+                    <br>
+                    <label for="phone number">Phone Number</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                    <br>
+                    <label for="id-type">ID Type</label>
+                    <select name="select">
+                        <option value="">Select</option>
+                        <option value="cpf">CPF</option>
+                        <option value="rg">RG</option>
+                        <option value="cnh">CNH</option>
+                    </select>
+                    <br>
+                    <label for="password">Confirm Password</label>
+                    <input type="password" placeholder="enter...">
+                    <br>
+                    <a class="link-signin" href="signon.html"><button class="botao-confirm">Confirm</button></a>
+                </div>
+            </div>
+            <p class="texto-bottom">Already have an account? <a class="link-signup" href="index.html">Login</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
