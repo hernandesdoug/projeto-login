@@ -1,0 +1,1 @@
+// classe usuario, requisicoes api 

@@ -25,10 +25,10 @@
             <div class="grid-form">
                 <div class="form-left">
                     <label for="full-name">Full Name</label>
-                    <input type="text" placeholder="enter...">
+                    <input type="text" placeholder="enter..." id="full-name">
                     <br>
                     <label for="date-birth">Date of Birth</label>
-                    <input type="date" placeholder="DD/MM/AAAA">
+                    <input type="date" placeholder="DD/MM/AAAA" id="date-birth">
                     <br>
                     <label for="nationality">Nationality</label>
                     <select name="select">
@@ -39,16 +39,16 @@
                     </select>
                     <br>
                     <label for="password">Password</label>
-                    <input type="password" placeholder="enter...">
+                    <input type="password" placeholder="enter..." id="password">
                     <br>
                     <a class="link-signin" href="index.html"><button class="botao-cancel">Cancel</button></a>
                 </div>
                 <div class="form-right">
                     <label for="email">Email</label>
-                    <input type="email" placeholder="enter email...">
+                    <input type="email" placeholder="enter email..." id="email">
                     <br>
-                    <label for="phone number">Phone Number</label>
-                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="(XX) XXXXX-XXXX" />
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="(XX) XXXXX-XXXX" / id="phone-number">
                     <br>
                     <label for="id-type">ID Type</label>
                     <select name="select">
@@ -59,16 +59,16 @@
                     </select>
                     <br>
                     <label for="password">Confirm Password</label>
-                    <input type="password" placeholder="enter...">
+                    <input type="password" placeholder="enter..." id="cf-password">
                     <br>
-                    <a class="link-signin" href="signon.html"><button class="botao-confirm">Confirm</button></a>
+                    <button class="botao-confirm">Confirm</button>
                 </div>
                     
             </div>
             <div class="texto-bottom">Already have an account? <a class="link-signup" href="index.html">Login</a></div>
         </div>
-        
     </div>
+    <script src="js/signup.js"></script>
 </body>
 
 </html>

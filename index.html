@@ -41,16 +41,17 @@
                 </button>
                 <br>
                 <label for="email" >Email</label>
-                <input type="email" placeholder=" enter email...">
+                <input type="email" placeholder=" enter email..." id="email">
                 <br>
                 <label for="password">Password</label>
-                <input type="password"  placeholder=" enter password...">
+                <input type="password"  placeholder=" enter password..." id="password">
                 <br>
-                <a class="link-signin" href="signon.html"><button class="botao-login">Login</button></a>
+                <button class="botao-login" onclick="validaLogin()">Login</button>
                 <br>
-                <p class="texto-bottom">Dont have an account? <a class="link-signup" href="signup.html">Sign up for Free</a></p>
+                <p class="texto-bottom">Dont have an account? <a class="link-signup" href="cadastro.html">Sign up for Free</a></p>
             </div>
         </div>
     </div>
+    <script src="js/signin.js"></script>
 </body>
 </html>
