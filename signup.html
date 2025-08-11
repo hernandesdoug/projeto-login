@@ -30,8 +30,8 @@
                     <label for="date-birth">Date of Birth</label>
                     <input type="date" placeholder="DD/MM/AAAA" id="date-birth">
                     <br>
-                    <label for="nationality">Nationality</label>
-                    <select name="select">
+                    <label for="select-nat">Nationality</label>
+                    <select id="select-nat">
                         <option value="">Select</option>
                         <option value="brazil">Brazil</option>
                         <option value="usa">United States</option>
@@ -45,13 +45,13 @@
                 </div>
                 <div class="form-right">
                     <label for="email">Email</label>
-                    <input type="email" placeholder="enter email..." id="email">
+                    <input type="email" placeholder=" enter email..." id="email">
                     <br>
                     <label for="phone-number">Phone Number</label>
                     <input type="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required placeholder="(XX) XXXXX-XXXX" / id="phone-number">
                     <br>
-                    <label for="id-type">ID Type</label>
-                    <select name="select">
+                    <label for="select-doc">ID Type</label>
+                    <select id="select-doc">
                         <option value="">Select</option>
                         <option value="cpf">CPF</option>
                         <option value="rg">RG</option>
@@ -61,7 +61,7 @@
                     <label for="password">Confirm Password</label>
                     <input type="password" placeholder="enter..." id="cf-password">
                     <br>
-                    <button class="btn-confirm">Confirm</button>
+                    <button class="btn-confirm" onclick="formUser(event)">Confirm</button>
                 </div>
                     
             </div>
