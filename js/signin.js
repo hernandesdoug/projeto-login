@@ -1,5 +1,5 @@
 // validar dados de login, fazer requisicoes da api, redirecionar pra pagina de usuario
-async function validaLogin(){
+async function validateLogin(){
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
@@ -10,15 +10,15 @@ async function validaLogin(){
 
     dataLogin.forEach((item) => {
         if (email === "" && password === "") {
-            alert("Preencha os campos!");
+            alert("Please, type a valid email and password!");
         }else if (email === item.email && password === item.password) {
             window.location.href = "signon.html";
         }else if(email === item.email && password === ""){
-            alert("Senha não digitada, digite a senha!");
+            alert("Password not informed, please, type it!");
         }else if(email === item.email && password !== item.password){
-            alert("Senha incorreta!")
+            alert("Incorrect password!")
         }else {
-            alert("Usuario não cadastrado!");
+            alert("User not found!");
         };
     });  
 };    

@@ -6,7 +6,7 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-hmtl,
+html,
 body,
 .div-bgr
 {
@@ -33,7 +33,7 @@ body,
     margin: 5px;
 }
 
-.titulo-signup {
+.title-signup {
     padding-left: 40px;
 }
 
@@ -91,7 +91,7 @@ label {
     margin-bottom: 0%;
 }
 
-.botao-confirm {
+.btn-confirm {
     width: 400px;
     height: 30px;
     margin-top: 5px;
@@ -101,7 +101,7 @@ label {
     color: #fff;
 }
 
-.botao-cancel {
+.btn-cancel {
     width: 400px;
     height: 30px;
     margin-top: 5px;
@@ -120,7 +120,7 @@ p {
     color: #747775;
 }
 
-.texto-bottom {
+.bottom-text {
     color: #747775;
     text-align: center;
    justify-content: center;

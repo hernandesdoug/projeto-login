@@ -6,7 +6,7 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-hmtl,
+html,
 body,
 .div-bgr
 {
@@ -14,7 +14,7 @@ body,
   min-height: 100vh;
 }
 
-.titulo {
+.title {
     margin-top: 50px;
     display: flex;
     flex-direction: column;

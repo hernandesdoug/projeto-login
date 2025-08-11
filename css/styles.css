@@ -6,7 +6,7 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-hmtl,
+html,
 body,
 .div-bg
 {
@@ -31,14 +31,14 @@ body,
     border-radius: 1rem;
 }
 
-.titulo, .tela-signin {
+.title, .signin-screen {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.titulo {
+.title {
     margin-top: 50px;
 }
 
@@ -56,7 +56,7 @@ p {
     color: #747775;
 }
 
-.botao-login {
+.btn-login {
     width: 400px;
     height: 30px;
     margin-top: 5px;
