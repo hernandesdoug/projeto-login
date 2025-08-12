@@ -1,1 +1,1 @@
-// classe usuario, requisicoes api 
+// recuperar dados do usuario, para alteracao e delecao.

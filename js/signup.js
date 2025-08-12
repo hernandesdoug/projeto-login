@@ -8,7 +8,7 @@ async function formUser(event) {
     const email = document.getElementById("email").value;
     const phoneNumber = document.getElementById("phone-number").value;
     const documentType = document.getElementById("select-doc").value;
-    // const cfPassword = document.getElementById("cf-password").value;
+    const cfPassword = document.getElementById("cf-password").value;
     const response = await fetch(`http://localhost:3333/users`, {
         method: "post",
         headers: {
@@ -20,12 +20,13 @@ async function formUser(event) {
             dateBirth,
             phoneNumber,
             password,
-            nationality,
+            nationality,    
             documentType})
     });
     console.log(response);
     console.log(await response.json());
     alert("User created successfully!");  
+    window.location.href = "signon.html";
 };
 document.addEventListener("DOMContentLoaded", function () {
 });
