@@ -9,24 +9,39 @@ async function formUser(event) {
     const phoneNumber = document.getElementById("phone-number").value;
     const documentType = document.getElementById("select-doc").value;
     const cfPassword = document.getElementById("cf-password").value;
-    const response = await fetch(`http://localhost:3333/users`, {
-        method: "post",
-        headers: {
-            "Content-Type": "application/json; charset=utf-8"
-        },
-        body: JSON.stringify({
-            fullName,
-            email,
-            dateBirth,
-            phoneNumber,
-            password,
-            nationality,    
+
+    try{
+        const response = await fetch("http://localhost:3333/users",{
+            method:  "POST",
+            headers: {
+                "Content-Type": "application/json; charset=utf-8"
+            },
+            body: JSON.stringify({
+                fullName,
+                email,
+                dateBirth,
+                phoneNumber,
+                password,
+                cfPassword,
+                nationality,    
             documentType})
-    });
-    console.log(response);
-    console.log(await response.json());
-    alert("User created successfully!");  
-    window.location.href = "signon.html";
+        });
+        if(response.ok){
+            const data = await response.json();
+            window.location.href = "signon.html"; 
+            console.log(data);          
+        }else {
+            const errorData = await response.json();
+            console.error("Login failed", errorData.message);
+            alert(errorData.message);
+        }
+    } catch(error){
+        console.error("Unexpected error!");
+    }
 };
+
+function cancelForm(event){
+    window.location.href = "index.html";
+}
 document.addEventListener("DOMContentLoaded", function () {
 });
