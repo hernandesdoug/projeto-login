@@ -22,6 +22,30 @@ body,
     align-items: center;
 }
 
-p {
-    color: #747775;
+#profile {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    width: 200px;
+    height: 25px;
+}
+input {
+    display: flex;
+    width: 200px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0 30px;
 }
