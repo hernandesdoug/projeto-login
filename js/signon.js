@@ -10,8 +10,9 @@ async function updateProfile(event) {
     const password = document.getElementById("password").value;
     const nationality = document.getElementById("nationality").value;
     const documentType = document.getElementById("document-type").value;
- 
-    const response = await fetch(`http://localhost:3333/users/${id}`, {
+    
+    try {
+        const response = await fetch(`http://localhost:3333/users/${id}`, {
     
         method: "put",
         headers: {
@@ -22,9 +23,18 @@ async function updateProfile(event) {
             password, nationality, documentType
         })
     });
-    console.log(response);
-    console.log(await response.json());
-    alert("User updated successfully!")
+    if (response.ok) {
+        const data = await response.json();
+        console.log(data.response);
+        alert("User updated successfully!")
+    } else {
+        const errorData = await response.json();
+        console.error("Failed to update user!", errorData.message);
+        alert(errorData.message);
+    }
+    } catch (error) {
+        console.error("Unexpected error!", error);
+    }   
 }
 async function deleteProfile(event) {
     event.preventDefault();
@@ -42,7 +52,7 @@ async function deleteProfile(event) {
             alert(errorData.message);
         }
     } catch (error) {
-        console.error("Unexpected error!");
+        console.error("Unexpected error!",error);
     }
 }
 async function logoutProfile(event) {
@@ -76,7 +86,7 @@ async function recoverProfile() {
             alert(errorData.message);
         }
     } catch (error) {
-        console.error("Unexpected error!");
+        console.error("Unexpected error!", error);
     }
 
 }

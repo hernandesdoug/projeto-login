@@ -39,7 +39,7 @@ async function formUser(event) {
             alert(errorData.message);
         }
     } catch(error){
-        console.error("Unexpected error!");
+        console.error("Unexpected error!", error);
     }
 };
 
