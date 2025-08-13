@@ -15,19 +15,21 @@ async function validateLogin() {
                 "Content-Type": "application/json; charset=utf-8"
             },
             body: JSON.stringify(loginData)
-
         });
+        
         if(response.ok){
             const data = await response.json();
-            window.location.href = "signon.html"; 
             console.log(data);
+            const id = data.id;
+            const url = `signon.html?id=${id}`;
+            window.location.href = url;  
         }else {
             const errorData = await response.json();
             console.error("Login failed", errorData.message);
             alert(errorData.message);
         }
     } catch(error){
-        console.error("Unexpected error!");
+        console.error("Unexpected error!", error);
     }
 };   
 document.addEventListener("DOMContentLoaded", function () {

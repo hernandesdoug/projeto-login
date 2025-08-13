@@ -28,8 +28,11 @@ async function formUser(event) {
         });
         if(response.ok){
             const data = await response.json();
-            window.location.href = "signon.html"; 
-            console.log(data);          
+            console.log(data);
+            const jsonId = JSON.parse(message, type, id);
+            const id = jsonId.id; 
+            const url = `signon.html?id=${id}`;
+            window.location.href = url;          
         }else {
             const errorData = await response.json();
             console.error("Login failed", errorData.message);
