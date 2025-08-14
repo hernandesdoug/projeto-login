@@ -29,8 +29,8 @@ async function formUser(event) {
         if(response.ok){
             const data = await response.json();
             console.log(data);
-            const jsonId = JSON.parse(message, type, id);
-            const id = jsonId.id; 
+            localStorage.clear();
+            const id = data.id;
             const url = `signon.html?id=${id}`;
             window.location.href = url;          
         }else {

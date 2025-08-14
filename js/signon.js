@@ -40,11 +40,15 @@ async function deleteProfile(event) {
     event.preventDefault();
     try {
         const response = await fetch(`http://localhost:3333/users/${id}`, {
-            method: "delete"
+            method: "delete",
+            headers: {
+                "Content-Type": "application/json; charset=utf-8"
+            },
         });
         if (response.ok) {
             const data = await response.json();
             console.log(data.response);
+            window.location.href = "index.html"; 
             alert("User deleted successfully!")
         } else {
             const errorData = await response.json();
